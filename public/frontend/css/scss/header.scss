@@ -1,0 +1,57 @@
+@mixin vendorTransition ($value) {
+	-webkit-transition: $value;
+       -moz-transition: $value;
+         -o-transition: $value;
+            transition: $value;
+}
+
+header {
+	width: 100%;
+	.top-menu {
+		position: fixed;
+		height: 50px;
+		width: 100%;
+		left: 0;
+		background-color: #446CB3;
+	}
+	nav {
+		max-width: 960px;
+		margin: 0 auto;
+		ul {
+			display: block;
+			list-style: none;
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
+			-webkit-margin-start: 0;
+			-webkit-margin-end: 0;
+			-webkit-padding-start: 0;
+			li {
+				display: block;
+				float: left;
+				a {
+					display: block;
+					text-decoration: none;
+					color: #fff;
+					font-size: 18px;
+					line-height: 50px;
+					padding: 0 15px;
+					@include vendorTransition($value: background-color .15s linear);
+				}
+				a:hover {
+					background-color: #fff;
+					color: #446CB3;
+				}
+			}
+			li:last-child {
+				float: right;
+			}
+		}
+	}
+	.top-banner {
+		float: left;
+		background-color: #fff;
+		height: 150px;
+		width: 100%;
+		margin-top: 50px;
+	}
+}
