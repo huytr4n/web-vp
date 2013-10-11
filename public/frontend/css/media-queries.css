@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  header .top-menu {
+    display: none; }
+  header .navbar-collapse {
+    display: table; }
+    header .navbar-collapse .navbar-header {
+      display: table; } }

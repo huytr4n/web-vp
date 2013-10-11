@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+	header {
+		.top-menu {
+			display: none;
+		}
+		.navbar-collapse {
+			display: table;
+			.navbar-header {
+				display: table;
+			}
+		}
+	}
+}

@@ -2,25 +2,45 @@ header {
   width: 100%; }
   header .top-menu {
     position: fixed;
+    z-index: 60;
     height: 50px;
     width: 100%;
     left: 0;
     background-color: #446CB3; }
-  header nav {
+  header .navbar-collapse {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 50px;
+    background-color: #446CB3; }
+    header .navbar-collapse .navbar-header {
+      display: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      width: 100%; }
+      header .navbar-collapse .navbar-header .navbar-header-menu {
+        display: block;
+        max-width: 100px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 0 0 rgba(255, 255, 255, 0.11); }
+    header .navbar-collapse a {
+      color: #fff;
+      line-height: 50px;
+      padding: 0 15px;
+      font-size: 18px; }
+    header .navbar-collapse nav {
+      display: none; }
+  header nav:not(.navbar-collapse-menu) {
     max-width: 960px;
     margin: 0 auto; }
-    header nav ul {
-      display: block;
-      list-style: none;
-      -webkit-margin-before: 0;
-      -webkit-margin-after: 0;
-      -webkit-margin-start: 0;
-      -webkit-margin-end: 0;
-      -webkit-padding-start: 0; }
-      header nav ul li {
+    header nav:not(.navbar-collapse-menu) ul {
+      display: block; }
+      header nav:not(.navbar-collapse-menu) ul li {
         display: block;
-        float: left; }
-        header nav ul li a {
+        float: left;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 0 0 rgba(255, 255, 255, 0.11); }
+        header nav:not(.navbar-collapse-menu) ul li a {
           display: block;
           text-decoration: none;
           color: #fff;
@@ -31,14 +51,19 @@ header {
           -moz-transition: background-color 0.15s linear;
           -o-transition: background-color 0.15s linear;
           transition: background-color 0.15s linear; }
-        header nav ul li a:hover {
+        header nav:not(.navbar-collapse-menu) ul li a:hover {
           background-color: #fff;
           color: #446CB3; }
-      header nav ul li:last-child {
+      header nav:not(.navbar-collapse-menu) ul li:last-child {
         float: right; }
-  header .top-banner {
+      header nav:not(.navbar-collapse-menu) ul li:first-child, header nav:not(.navbar-collapse-menu) ul li:last-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 0 0 rgba(255, 255, 255, 0.11); }
+  header .top-banner, header .top-caption {
     float: left;
-    background-color: #fff;
-    height: 150px;
-    width: 100%;
+    width: 100%; }
+  header .top-caption {
     margin-top: 50px; }
+    header .top-caption .caption {
+      max-width: 960px;
+      margin: 0 auto; }

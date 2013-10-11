@@ -6,7 +6,46 @@ body {
 	background-color: #F6F8F8;
 }
 
+h1 {
+	font-family: 'Varela Round', sans-serif;
+}
+
 .wrapper {
-	max-width: 960px;
+	width: 100%;
 	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+ul {
+	display: block;
+	list-style: none;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
 }

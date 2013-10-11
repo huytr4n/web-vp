@@ -9,25 +9,50 @@ header {
 	width: 100%;
 	.top-menu {
 		position: fixed;
+		z-index: 60;
 		height: 50px;
 		width: 100%;
 		left: 0;
 		background-color: #446CB3;
 	}
-	nav {
+	.navbar-collapse {
+		position: fixed;
+		display: none;
+		width: 100%;
+		height: 50px;
+		background-color: #446CB3;
+		.navbar-header {
+			display: none;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			width: 100%;
+			.navbar-header-menu {
+				display: block;
+				max-width: 100px;
+				border-right: 1px solid rgba(0, 0, 0, 0.1);
+				border-left: 1px solid rgba(0, 0, 0, 0.1);
+				box-shadow: 1px 0 0 rgba(255, 255, 255, 0.11);
+			}
+		}
+		a {
+			color: #fff;
+			line-height: 50px;
+			padding: 0 15px;
+			font-size: 18px;
+		}
+		nav {
+			display: none;
+		}
+	}
+	nav:not(.navbar-collapse-menu) {
 		max-width: 960px;
 		margin: 0 auto;
 		ul {
 			display: block;
-			list-style: none;
-			-webkit-margin-before: 0;
-			-webkit-margin-after: 0;
-			-webkit-margin-start: 0;
-			-webkit-margin-end: 0;
-			-webkit-padding-start: 0;
 			li {
 				display: block;
 				float: left;
+				border-right: 1px solid rgba(0, 0, 0, 0.1);
+				box-shadow: 1px 0 0 rgba(255, 255, 255, 0.11);
 				a {
 					display: block;
 					text-decoration: none;
@@ -45,13 +70,21 @@ header {
 			li:last-child {
 				float: right;
 			}
+			li:first-child, li:last-child {
+				border-left: 1px solid rgba(0, 0, 0, 0.1);
+				box-shadow: 1px 0 0 rgba(255, 255, 255, 0.11);
+			}
 		}
 	}
-	.top-banner {
+	.top-banner, .top-caption {
 		float: left;
-		background-color: #fff;
-		height: 150px;
 		width: 100%;
+	}
+	.top-caption {
+		.caption {
+			max-width: 960px;
+			margin: 0 auto;
+		}
 		margin-top: 50px;
 	}
 }

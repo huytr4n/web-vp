@@ -2,7 +2,33 @@
   width: 99.8%;
   height: 800px;
   float: left;
-  border: 1px solid #E7E6E6;
-  border-radius: 5px;
-  background-color: #fff;
-  margin-top: 20px; }
+  margin-top: 20px;
+  background-repeat: repeat-x;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 1px 3px 1px -2px #d4d3d3;
+  -moz-box-shadow: inset 1px 3px 1px -2px #d4d3d3;
+  box-shadow: inset 1px 3px 1px -2px #d4d3d3; }
+  .container .rows {
+    max-width: 960px;
+    margin: 0 auto; }
+  .container .cols .item {
+    width: 218px;
+    min-height: 200px;
+    background-color: orange;
+    float: left;
+    margin: 5px 10px;
+    border: 1px solid #cdcdcd;
+    -webkit-box-shadow: 1px 1px 5px #888888;
+    -moz-box-shadow: 1px 1px 5px #888888;
+    -o-box-shadow: 1px 1px 5px #888888;
+    box-shadow: 1px 1px 5px #888888; }
+    .container .cols .item .top, .container .cols .item .center, .container .cols .item .bottom {
+      width: 100%;
+      float: left; }
+    .container .cols .item .center {
+      height: 70%;
+      min-height: 200px; }
+    .container .cols .item .bottom {
+      background-color: grey;
+      height: 30%;
+      min-height: 100px; }
