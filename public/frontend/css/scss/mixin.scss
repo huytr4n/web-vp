@@ -1,0 +1,35 @@
+@mixin vendorBoxShadow ($value) {
+	-webkit-box-shadow: $value;
+     -moz-box-shadow: $value;
+       -o-box-shadow: $value;
+          box-shadow: $value;
+}
+
+@mixin vendorTransition ($value) {
+	-webkit-transition: $value;
+       -moz-transition: $value;
+         -o-transition: $value;
+            transition: $value;
+}
+
+@mixin venderMultiTransition ($property, $duration, $timing) {
+	-webkit-transition-property: #{$property};
+       -moz-transition-property: #{$property};
+         -o-transition-property: #{$property};
+            transition-property: #{$property};
+    -webkit-transition-duration: $duration;
+       -moz-transition-duration: $duration;
+         -o-transition-duration: $duration;
+            transition-duration: $duration;
+    -webkit-transition-timing-function: $timing;
+       -moz-transition-timing-function: $timing;
+         -o-transition-timing-function: $timing;
+            transition-timing-function: $timing;
+}
+
+@mixin venderBorderRadius ($top, $right, $bottom, $left) {
+	-webkit-border-radius: $top $right $bottom $left;
+	   -moz-border-radius: $top $right $bottom $left;
+	    -o-border-radius :$top $right $bottom $left;
+	        border-radius: $top $right $bottom $left;
+}

@@ -9,10 +9,10 @@ $(document).ready(function () {
 	var navbarState = false;
 	$('.navbar-header-menu').on('click', function () {
 		if (navbarState === true) {
-			$('.navbar-collapse-menu').css({'display':'none'});
+			$('.navbar-collapse-menu').attr("hidden", "hidden");
 			navbarState = false;
 		} else {
-			$('.navbar-collapse-menu').css({'display':'table'});
+			$('.navbar-collapse-menu').removeAttr("hidden");
 			navbarState = true;
 		}		
 	});

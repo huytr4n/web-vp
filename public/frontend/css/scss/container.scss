@@ -1,9 +1,4 @@
-@mixin vendorBoxShadow ($value) {
-	-webkit-box-shadow: $value;
-     -moz-box-shadow: $value;
-       -o-box-shadow: $value;
-          box-shadow: $value;
-}
+@import "mixin";
 
 .container {
 	width: 99.8%;
@@ -23,11 +18,13 @@
 		.item {
 			width: 218px;
 			min-height: 200px;
-			background-color: orange;
+			background-color: #fff;
 			float: left;
 			margin: 5px 10px;
 			border: 1px solid #cdcdcd;
 			@include vendorBoxShadow($value: 1px 1px 5px #888);
+			@include venderMultiTransition($property: 'margin, background-color', $duration : .25s, $timing: linear);
+			@include venderBorderRadius(5px, 5px ,5px, 5px);
 			.top, .center, .bottom {
 				width: 100%;
 				float: left;
@@ -35,12 +32,21 @@
 			.center {
 				height: 70%;
 				min-height: 200px;
+				img {
+					margin: 20px 20px;
+					padding: 4px;
+					border: 1px solid #eee;
+				}
 			}
 			.bottom {
-				background-color: grey;
+				border-top: 1px solid #eee;
 				height: 30%;
 				min-height: 100px;
 			}
+		}
+		.item:hover {
+			margin-left: 20px;
+			margin-right: 0px;
 		}
 	}
 }

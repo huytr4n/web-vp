@@ -14,21 +14,44 @@
   .container .cols .item {
     width: 218px;
     min-height: 200px;
-    background-color: orange;
+    background-color: #fff;
     float: left;
     margin: 5px 10px;
     border: 1px solid #cdcdcd;
     -webkit-box-shadow: 1px 1px 5px #888888;
     -moz-box-shadow: 1px 1px 5px #888888;
     -o-box-shadow: 1px 1px 5px #888888;
-    box-shadow: 1px 1px 5px #888888; }
+    box-shadow: 1px 1px 5px #888888;
+    -webkit-transition-property: margin, background-color;
+    -moz-transition-property: margin, background-color;
+    -o-transition-property: margin, background-color;
+    transition-property: margin, background-color;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px; }
     .container .cols .item .top, .container .cols .item .center, .container .cols .item .bottom {
       width: 100%;
       float: left; }
     .container .cols .item .center {
       height: 70%;
       min-height: 200px; }
+      .container .cols .item .center img {
+        margin: 20px 20px;
+        padding: 4px;
+        border: 1px solid #eee; }
     .container .cols .item .bottom {
-      background-color: grey;
+      border-top: 1px solid #eee;
       height: 30%;
       min-height: 100px; }
+  .container .cols .item:hover {
+    margin-left: 20px;
+    margin-right: 0px; }
