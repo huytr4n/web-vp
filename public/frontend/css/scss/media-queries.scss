@@ -1,13 +1,48 @@
+@import "mixin";
+
+@media screen and (min-width: 960px) {
+	.cols {
+		.item{
+			@include venderMultiTransition($property: 'margin, background-color', $duration : .25s, $timing: linear);
+			margin-left: 30px;
+			margin-top: 20px;
+		}
+		.item:hover {
+			margin-top: 0px;
+			background-color: #E84788;
+		}
+		.item:nth-child(3n+1) {
+			margin-left: 0;
+			clear: left;
+		}
+	} 
+}
+
 @media (max-width: 768px) {
 	header {
 		.top-menu {
 			display: none;
 		}
 		.navbar-collapse {
-			display: table;
+			display: block;
+			height: 40px;
 			.navbar-header {
-				display: table;
+				height: 40px;
+				display: block;
 			}
+			a {
+				line-height: 40px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.cols {
+		.item {
+			margin-left: 3.125% !important;
+			margin-top: 20px;
 		}
 	}
 }

@@ -1,57 +1,75 @@
 .container {
-  width: 99.8%;
-  height: 800px;
+  width: 100%;
+  height: auto;
   float: left;
   margin-top: 20px;
   background-repeat: repeat-x;
-  background-color: #ffffff;
+  background-color: #fff;
+  border-top: 1px solid #CBC8C1;
   -webkit-box-shadow: inset 1px 3px 1px -2px #d4d3d3;
   -moz-box-shadow: inset 1px 3px 1px -2px #d4d3d3;
+  -o-box-shadow: inset 1px 3px 1px -2px #d4d3d3;
   box-shadow: inset 1px 3px 1px -2px #d4d3d3; }
   .container .rows {
     max-width: 960px;
     margin: 0 auto; }
-  .container .cols .item {
-    width: 218px;
-    min-height: 200px;
-    background-color: #fff;
+  .container .cols {
+    margin-top: 30px; }
+    .container .cols .item {
+      width: 298px;
+      min-height: 200px;
+      background-color: #fff;
+      float: left;
+      border: 1px solid #cdcdcd;
+      -webkit-box-shadow: 1px 1px 5px #888888;
+      -moz-box-shadow: 1px 1px 5px #888888;
+      -o-box-shadow: 1px 1px 5px #888888;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      -moz-border-radius: 5px 5px 5px 5px;
+      -o-border-radius: 5px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px; }
+      .container .cols .item .top, .container .cols .item .center, .container .cols .item .bottom {
+        width: 100%;
+        float: left; }
+      .container .cols .item .center {
+        height: 70%;
+        min-height: 200px; }
+        .container .cols .item .center img {
+          margin: 24px;
+          padding: 4px;
+          border: 1px solid #eee;
+          background-color: #fff; }
+      .container .cols .item .bottom {
+        border-top: 1px solid #eee;
+        height: 30%;
+        min-height: 100px; }
+  .container .showrom-controls .catalog {
+    width: 100%; }
+  .container .showrom-controls ul {
+    display: block;
+    min-width: 100px;
+    height: 40px; }
+  .container .showrom-controls li {
+    display: block;
     float: left;
-    margin: 5px 10px;
-    border: 1px solid #cdcdcd;
-    -webkit-box-shadow: 1px 1px 5px #888888;
-    -moz-box-shadow: 1px 1px 5px #888888;
-    -o-box-shadow: 1px 1px 5px #888888;
-    box-shadow: 1px 1px 5px #888888;
-    -webkit-transition-property: margin, background-color;
-    -moz-transition-property: margin, background-color;
-    -o-transition-property: margin, background-color;
-    transition-property: margin, background-color;
-    -webkit-transition-duration: 0.25s;
-    -moz-transition-duration: 0.25s;
-    -o-transition-duration: 0.25s;
-    transition-duration: 0.25s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -o-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px; }
-    .container .cols .item .top, .container .cols .item .center, .container .cols .item .bottom {
-      width: 100%;
-      float: left; }
-    .container .cols .item .center {
-      height: 70%;
-      min-height: 200px; }
-      .container .cols .item .center img {
-        margin: 24px;
-        padding: 4px;
-        border: 1px solid #eee; }
-    .container .cols .item .bottom {
-      border-top: 1px solid #eee;
-      height: 30%;
-      min-height: 100px; }
-  .container .cols .item:hover {
-    margin-left: 20px;
-    margin-right: 0px; }
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc; }
+    .container .showrom-controls li a {
+      line-height: 40px;
+      display: block;
+      padding: 0 15px;
+      color: #756E6B;
+      -webkit-transition: background-color 0.25s linear;
+      -moz-transition: background-color 0.25s linear;
+      -o-transition: background-color 0.25s linear;
+      transition: background-color 0.25s linear; }
+    .container .showrom-controls li a:hover {
+      background-color: #A1D1BC; }
+  .container .showrom-controls li:first-child {
+    border-left: 1px solid #ccc; }
+  .container .showrom-footer {
+    width: 100%;
+    height: 20px; }
